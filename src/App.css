@@ -1,170 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Niconne&display=swap');
-
-.App {
+.header {
+  /* display: inline-block; */
+  height: 25vh;
+  width: 100vw;
+  background-color: rgb(126, 125, 125);
+  color:ivory;
+  padding: 1rem;
+  margin: auto;
   text-align: center;
 }
 
-.header h1 {
-  padding: 20px;
-  background-color: rgba(74, 228, 138, 0.267);
-  margin-bottom: 50px;
-  border-color: rgb(19, 12, 3);
-  border-radius: 40px;
-}
-.header span {
-  color: rgb(220, 50, 20);
+.header__title {
+  text-transform: lowercase;
+  font-family: monospace;
+  font-size: 3rem;
+  color: rgba(255, 94, 0, 0.788);
+  margin: 2rem auto .5rem auto;
 }
 
-/* header h2 {
-  margin: 50px auto;
-} */
-
-#form {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  /* padding: auto 500px; */
-  margin: 40px auto;
-}
-#form input {
-  padding: 8px 20px;
-  background-color: rgba(74, 228, 138, 0.267);
-  border-radius: 20px;
-  margin-bottom: 10px;
-  border-color: rgb(120, 158, 17);
-}
-#form button {
-  padding: 7px 30px;
-  background-color: rgb(221, 96, 96);
-  border-radius: 20px;
-  font-weight: bold;
-  border-color: rgb(202, 144, 18);
-  color: rgb(238, 193, 81);
-}
-
-#cardlist {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: rgb(161, 214, 201);
-}
-#card {
-  width: 80%;
-  border-radius: 10px;
-  padding: 0px auto;
-  margin: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgb(224, 235, 223);
-  box-shadow: 0px 0px 18px 0 #0000002c;
-  transition: 0.3s ease box-shadow;
-}
-
-#card:hover {
-  box-shadow: 0px 0px 5px 0 #0000002c;
-}
-
-#card .username {
-  font-family: 'Dancing Script';
-  font-size: 1.5rem;
-}
-
-#card img {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-}
-
-#card h4 {
+.header__sub {
   font-style: italic;
-}
-#card h4 span {
-  color: rgb(220, 50, 20);
-}
-
-#card .bio {
-  font-size: 1rem;
-  font-weight: 700;
-  /* font-family: 'Niconne'; */
-  margin: 10px;
-  color: rgb(220, 50, 20);
-  padding: 8px;
+  text-transform: lowercase;
+  font-family: monospace;
 }
 
-.pro-list,
-.social-list {
-  list-style: none;
+.form {
+  display: grid;
+  grid-template-columns: 70vw 30vw;
+  background-color: ivory;
+  width: 100vw;
+  margin: auto;
+  height: 12vh;
+}
+
+.form__input {  
+  place-items: center;
+  margin: auto;
+  width: 80%;
+  height: 2rem;
+  border: 2px solid rgba(255, 94, 0, 0.788);
+  border-radius: 5px;
+  text-align: center;
+  padding: 1rem;
+  font-family: monospace;
+  
+}
+
+.form__btn {
+  place-items: center;
+  font-size: 2rem;
   padding: 0;
+  border-style: none;
+  background-color: ivory;
 }
-
-.pro-list > li,
-.social-list > li {
-  padding: 0.3rem;
-}
-
-.fas,
-.fab {
-  margin-right: 1rem;
-}
-
-#chart {
-  margin: 1rem;
-}
-
-/* @media only screen and (min-width: 440px) {
-  #cardlist {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-    align-items: center;
-		margin: 0;
-  }
-
-  #card {
-    width: 80%;
-		margin: 20px;
-		/* flex-direction: column; */
-/* }
-}  */
-
-/* ---------- */
-
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */

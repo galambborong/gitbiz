@@ -11,7 +11,7 @@ class Username extends React.Component {
   render() {
     return (
       <form
-        id="form"
+        className="form"
         onSubmit={(e) => {
           e.preventDefault();
           this.props.addUser(this.state.inputUsername);
@@ -19,12 +19,13 @@ class Username extends React.Component {
         }}
       >
         <input
+          className="form__input"
           type="text"
           id="username"
-          placeholder="GitHub username"
+          placeholder="github username"
           onChange={this.handleChange}
         />
-        <button type="submit">Add your GitHub profile</button>
+        <button className="form__btn" type="submit"><i className="fab fa-github"></i></button>
       </form>
     );
   }

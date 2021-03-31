@@ -4,8 +4,8 @@ import Cardlist from './components/Cardlist';
 import Header from './components/Header';
 import Username from './components/Username';
 
-const Abdalraof = 'Abenaesha';
-const Peter = 'galambborong';
+const abdalraof = 'Abenaesha';
+const peter = 'galambborong';
 const GITHUB_API = 'https://api.github.com/users/';
 
 class App extends React.Component {
@@ -30,20 +30,20 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    this.addUser(Abdalraof);
-    this.addUser(Peter);
+    this.addUser(abdalraof);
+    this.addUser(peter);
   }
 
   render() {
-    const { isLoaded } = this.state;
+    const { isLoaded, users } = this.state;
     return (
       <div className="App">
         <Header />
         <Username addUser={this.addUser} handleChange={this.handleChange} />
         {isLoaded ? (
-          <Cardlist users={this.state.users} />
+          <Cardlist users={users} />
         ) : (
-          <p>Your biz is important to us...! Please hold</p>
+          <p className="loading">Your biz is important to us...! Please hold</p>
         )}
       </div>
     );
