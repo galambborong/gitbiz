@@ -43,7 +43,9 @@ class App extends React.Component {
         {isLoaded ? (
           <Cardlist users={users} />
         ) : (
-          <p className="loading">Your biz is important to us...! Please hold</p>
+          <p className="loading">
+            Your biz is important to us...! <br></br> Please hold
+          </p>
         )}
       </div>
     );

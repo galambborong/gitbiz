@@ -3,7 +3,7 @@
   height: 25vh;
   width: 100vw;
   background-color: rgb(126, 125, 125);
-  color:ivory;
+  color: ivory;
   padding: 1rem;
   margin: auto;
   text-align: center;
@@ -14,7 +14,7 @@
   font-family: monospace;
   font-size: 3rem;
   color: rgba(255, 94, 0, 0.788);
-  margin: 2rem auto .5rem auto;
+  margin: 2rem auto 0.5rem auto;
 }
 
 .header__sub {
@@ -32,7 +32,7 @@
   height: 12vh;
 }
 
-.form__input {  
+.form__input {
   place-items: center;
   margin: auto;
   width: 80%;
@@ -42,7 +42,6 @@
   text-align: center;
   padding: 1rem;
   font-family: monospace;
-  
 }
 
 .form__btn {
@@ -51,4 +50,29 @@
   padding: 0;
   border-style: none;
   background-color: ivory;
+}
+
+.loading {
+  padding: 2rem;
+  margin: 1rem;
+  border: 2px solid rgba(255, 94, 0, 0.788);
+  border-radius: 5px;
+  text-align: center;
+  font-size: 2rem;
+  background-color: ivory;
+  font-family: monospace;
+}
+
+.card {
+  margin: auto;
+  border: 2px solid rgba(255, 94, 0, 0.788);
+  border-radius: 5px;
+  width: 85%;
+  padding: 0;
+}
+
+.card__img {
+  width: 33%;
+  float: right;
+  margin: 1rem;
 }

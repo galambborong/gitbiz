@@ -14,21 +14,21 @@ const Cards = ({ user }) => {
     repos_url
   } = user;
   const proDetails = [location, hireable, company];
-  const isPro = proDetails.some((detail) => {
+  const hasProDetails = proDetails.some((detail) => {
     return detail !== null;
   });
-  const socDetails = [twitter_username, followers, blog];
-  const isSoc = socDetails.some((detail) => {
+  const socialDetails = [twitter_username, followers, blog];
+  const hasSocialDetails = socialDetails.some((detail) => {
     return detail !== null;
   });
 
   return (
-    <section id="card">
-      <h3 className="username">{login}</h3>
-      <img src={avatar_url} alt="username"></img>
-      <p className="bio">{bio}</p>
-      <div id="profesh">
-        {isPro && (
+    <article className="card">
+      <h3 className="card__username">{login}</h3>
+      <img src={avatar_url} alt={login} className="card__img"></img>
+      <p className="card__bio">{bio}</p>
+      <div id="pro-details">
+        {hasProDetails && (
           <h4>
             Professional <span>INFO</span>{' '}
           </h4>
@@ -47,14 +47,14 @@ const Cards = ({ user }) => {
           )}
           {company && (
             <li>
-              <i class="fas fa-building"></i>
+              <i className="fas fa-building"></i>
               {company}
             </li>
           )}
         </ul>
       </div>
-      <div id="social">
-        {isSoc && (
+      <div id="social-details">
+        {hasSocialDetails && (
           <h4>
             Social <span>INFO</span>{' '}
           </h4>
@@ -83,7 +83,7 @@ const Cards = ({ user }) => {
         </ul>
       </div>
       <Chart repos_url={repos_url} />
-    </section>
+    </article>
   );
 };
 
