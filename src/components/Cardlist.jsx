@@ -1,13 +1,13 @@
-import Cards from "./Cards"
+import Cards from './Cards';
 
-const Cardlist = ({users}) => {
+const Cardlist = ({ users }) => {
   return (
-    <main id="cardlist">
+    <main className="cardlist">
       {users.map((user) => {
-        return <Cards key={user.id} user={user}/>
+        return <Cards key={user.id} user={user} />;
       })}
     </main>
-  )
-}
+  );
+};
 
 export default Cardlist;

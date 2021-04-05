@@ -68,10 +68,8 @@ class Chart extends React.Component {
     };
 
     return (
-      <div id="chart">
-        <h4>
-          Used <span>LANGUAGES</span>{' '}
-        </h4>
+      <div className="card__chart">
+        <h4>Used languages</h4>
         <HorizontalBar
           data={data}
           height={150}

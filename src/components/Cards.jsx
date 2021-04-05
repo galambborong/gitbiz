@@ -27,12 +27,8 @@ const Cards = ({ user }) => {
       <h3 className="card__username">{login}</h3>
       <img src={avatar_url} alt={login} className="card__img"></img>
       <p className="card__bio">{bio}</p>
-      <div id="pro-details">
-        {hasProDetails && (
-          <h4>
-            Professional <span>INFO</span>{' '}
-          </h4>
-        )}
+      <div className="card__pro-details">
+        {hasProDetails && <h4>Professional</h4>}
         <ul className="pro-list">
           {location && (
             <li>
@@ -53,12 +49,8 @@ const Cards = ({ user }) => {
           )}
         </ul>
       </div>
-      <div id="social-details">
-        {hasSocialDetails && (
-          <h4>
-            Social <span>INFO</span>{' '}
-          </h4>
-        )}
+      <div id="card__social-details">
+        {hasSocialDetails && <h4>Social</h4>}
         <ul className="social-list">
           {twitter_username && (
             <li>
