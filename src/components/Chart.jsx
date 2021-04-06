@@ -28,6 +28,7 @@ class Chart extends React.Component {
           .map((repo) => {
             return repo.language;
           });
+
         const languages = lang.reduce((totalLanguages, language) => {
           if (language in totalLanguages) {
             totalLanguages[language]++;
@@ -36,6 +37,7 @@ class Chart extends React.Component {
           }
           return totalLanguages;
         }, {});
+
         const values = [];
         for (const lang in languages) {
           values.push(languages[lang]);

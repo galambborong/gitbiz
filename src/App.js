@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Cardlist from './components/Cardlist';
+import CardList from './components/CardList';
 import Header from './components/Header';
 import Username from './components/Username';
 
@@ -41,7 +41,7 @@ class App extends React.Component {
         <Header />
         <Username addUser={this.addUser} handleChange={this.handleChange} />
         {isLoaded ? (
-          <Cardlist users={users} />
+          <CardList users={users} />
         ) : (
           <p className="loading">
             Your biz is important to us...! <br></br> Please hold
